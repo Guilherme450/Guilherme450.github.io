@@ -2,10 +2,6 @@
 
 This is a personal portfolio website for Guilherme Lima, a Data Scientist student. The purpose of this project is to showcase his skills, projects, and resume to potential employers and collaborators.
 
-## Screenshot
-
-![Website Screenshot](imgs/guilherme_main.png)
-
 ## Technologies Used
 
 *   **Frontend:**
