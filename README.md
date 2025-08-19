@@ -41,7 +41,7 @@ To run this project locally, follow these steps:
 **Guilherme Lima**
 
 *   **GitHub:** [Guilherme450](https://github.com/Guilherme450)
-*   **LinkedIn:** [Guilherme Lima](https://www.linkedin.com/in/guilherme-lima-nascimento-34857a302/)
+*   **LinkedIn:** [Guilherme Lima](https://www.linkedin.com/in/guilherme-lima-34857a302/)
 *   **Kaggle:** [guilhermelima2005](https://www.kaggle.com/guilhermelima2005)
 
 ---
