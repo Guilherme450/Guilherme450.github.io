@@ -8,6 +8,45 @@ const sidebarLinks = document.querySelectorAll('.sidebar-links a');
 const resumeSectionLinks = document.querySelectorAll('.resume-section-link');
 const resumeSections = document.querySelectorAll('.resume-section');
 const contactForm = document.getElementById('contactForm');
+const languageSelect = document.getElementById('language-select');
+
+// i18n
+async function loadLanguage(lang) {
+    const response = await fetch(`locales/${lang}.json`);
+    const translations = await response.json();
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        element.textContent = translations[key];
+    });
+}
+
+languageSelect.addEventListener('change', (e) => {
+    loadLanguage(e.target.value);
+    localStorage.setItem('language', e.target.value);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLanguage = localStorage.getItem('language') || 'pt';
+    languageSelect.value = savedLanguage;
+    loadLanguage(savedLanguage);
+
+    new Splide('.splide', {
+        type: 'loop',
+        perPage: 3,
+        perMove: 1,
+        gap: '1rem',
+        pagination: false,
+        breakpoints: {
+            768: {
+                perPage: 1,
+            },
+            991: {
+                perPage: 2,
+            }
+        }
+    }).mount();
+});
+
 
 // Theme Toggle
 themeToggle.addEventListener('click', () => {
