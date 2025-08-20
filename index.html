@@ -7,7 +7,7 @@
     <meta name="keywords" content="Cientista de Dados, Data Scientist Portfolio, Analista de Dados, Inteligência Artificial, Machine Learning, Visualização de Dados">
     <meta name="keywords" content="Guilherme Lima, portfólio, desenvolvedor, ciência da computação, análise de dados, inteligência artificial, projetos, currículo, ciência de dados">
     <link rel="icon" href="imgs/site-cv-logo.png" type="image/png">
-    <title>Guilherme | Cientista de Dados</title>
+    <title data-i18n="siteTitle">Guilherme | Cientista de Dados</title>
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
@@ -30,13 +31,21 @@
             <div class="header-container">
                 <a href="#" class="logo">Guilherme Lima.</a>
                 <ul class="nav-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#resume">Currículo</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#home" data-i18n="navHome">Início</a></li>
+                    <li><a href="#about" data-i18n="navAbout">Sobre</a></li>
+                    <li><a href="#projects" data-i18n="navProjects">Projetos</a></li>
+                    <li><a href="#resume" data-i18n="navResume">Currículo</a></li>
+                    <li><a href="#contact" data-i18n="navContact">Contato</a></li>
                 </ul>
                 <div class="header-actions">
+                    <div class="language-switcher">
+                        <select id="language-select" class="form-control">
+                            <option value="pt">Português</option>
+                            <option value="en">English</option>
+                            <option value="ja">日本語</option>
+                            <option value="zh">中文</option>
+                        </select>
+                    </div>
                     <button class="theme-toggle" aria-label="Alternar tema">
                         <i class="fas fa-sun"></i>
                     </button>
@@ -54,16 +63,16 @@
             <i class="fas fa-times"></i>
         </button>
         <ul class="sidebar-links">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#resume">Currículo</a></li>
+            <li><a href="#home" data-i18n="navHome">Início</a></li>
+            <li><a href="#about" data-i18n="navAbout">Sobre</a></li>
+            <li><a href="#projects" data-i18n="navProjects">Projetos</a></li>
+            <li><a href="#resume" data-i18n="navResume">Currículo</a></li>
           <!--  <li><a href="#blog">Blog</a></li> -->
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#contact" data-i18n="navContact">Contato</a></li>
         </ul>
         <div class="sidebar-social">
             <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/guilherme-lima-34857a302/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="https://kaggle.com/" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
             <a href="mailto:guilherme@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
@@ -73,12 +82,12 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <p class="hero-greeting">Olá, eu sou o Guilherme!</p>
-                <h1 class="hero-title">Cientista de Dados em formação, apaixonado por dados e inteligência artificial.</h1>
-                <p class="hero-description">Transformando dados brutos em insights valiosos para empresas e contribuindo para o avanço da ciência através da análise de dados e do desenvolvimento de soluções baseadas em IA.</p>
+                <p class="hero-greeting" data-i18n="heroGreeting">Olá, eu sou o Guilherme!</p>
+                <h1 class="hero-title" data-i18n="heroTitle">Cientista de Dados em formação, apaixonado por dados e inteligência artificial.</h1>
+                <p class="hero-description" data-i18n="heroDescription">Transformando dados brutos em insights valiosos para empresas e contribuindo para o avanço da ciência através da análise de dados e do desenvolvimento de soluções baseadas em IA.</p>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn">Veja meus projetos</a>
-                    <a href="#contact" class="btn btn-outline">Entre em contato</a>
+                    <a href="#projects" class="btn" data-i18n="heroBtnProjects">Veja meus projetos</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="heroBtnContact">Entre em contato</a>
                 </div>
             </div>
         </div>
@@ -88,20 +97,20 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title reveal">Sobre Mim</h2>
+            <h2 class="section-title reveal" data-i18n="aboutTitle">Sobre Mim</h2>
             <div class="about-container reveal">
                 <div class="about-image">
                     <img src="imgs/guilherme_main.png" alt="Guilherme - Cientista de Dados">
                 </div>
                 <div class="about-content">
-                    <h3>Quem sou eu</h3>
+                    <h3 data-i18n="aboutSubTitle">Quem sou eu</h3>
                     <div class="about-text">
-                        <p>Me chamo Guilherme Lima, tenho 20 anos e sou estudante de Ciência da Computação no Instituto Federal do Maranhão (IFMA). Sou apaixonado por dados e IA, e estou em constante aprendizado para expandir meus conhecimentos em análise de dados, machine learning e visualização de dados.</p>
-                        <p>Meu objetivo é transformar dados complexos em informações claras e acionáveis que possam ajudar organizações a tomar decisões melhores. Estou buscando oportunidades de estágio e projetos na área de ciência de dados para aplicar e desenvolver minhas habilidades.</p>
+                        <p data-i18n="aboutBio1">Me chamo Guilherme Lima, tenho 20 anos e sou estudante de Ciência da Computação no Instituto Federal do Maranhão (IFMA). Sou apaixonado por dados e IA, e estou em constante aprendizado para expandir meus conhecimentos em análise de dados, machine learning e visualização de dados.</p>
+                        <p data-i18n="aboutBio2">Meu objetivo é transformar dados complexos em informações claras e acionáveis que possam ajudar organizações a tomar decisões melhores. Estou buscando oportunidades de estágio e projetos na área de ciência de dados para aplicar e desenvolver minhas habilidades.</p>
                     </div>
 
                     <div class="skills-container">
-                        <h4 class="skills-title">Habilidades Técnicas</h4>
+                        <h4 class="skills-title" data-i18n="skillsTechTitle">Habilidades Técnicas</h4>
                         <div class="skills-list">
                             <div class="skill-item"><i class="fab fa-python"></i>Python</div>
                             <div class="skill-item"><i class="fas fa-table"></i>Pandas</div>
@@ -113,34 +122,37 @@
                             <div class="skill-item"><i class="fas fa-database"></i>SQL</div>
                             <div class="skill-item"><i class="fas fa-chart-bar"></i>Power BI</div>
                             <div class="skill-item"><i class="fab fa-git-alt"></i>Git</div>
+                            <div class="skill-item"><i class="fas fa-server"></i>Backend Developer</div>
+                            <div class="skill-item"><i class="fas fa-bolt"></i>FastAPI</div>
+                            <div class="skill-item"><i class="fas fa-chart-pie"></i>Dash</div>
                         </div>
                     </div>
 
                     <div class="skills-container">
-                        <h4 class="skills-title">Soft Skills</h4>
+                        <h4 class="skills-title" data-i18n="skillsSoftTitle">Soft Skills</h4>
                         <div class="skills-list">
-                            <div class="skill-item"><i class="fas fa-chart-line"></i>Pensamento Analítico</div>
-                            <div class="skill-item"><i class="fas fa-comments"></i>Comunicação</div>
-                            <div class="skill-item"><i class="fas fa-tasks"></i>Proatividade</div>
-                            <div class="skill-item"><i class="fas fa-puzzle-piece"></i>Resolução de Problemas</div>
-                            <div class="skill-item"><i class="fas fa-users"></i>Trabalho em Equipe</div>
+                            <div class="skill-item"><i class="fas fa-chart-line"></i><span data-i18n="skillsSoft1">Pensamento Analítico</span></div>
+                            <div class="skill-item"><i class="fas fa-comments"></i><span data-i18n="skillsSoft2">Comunicação</span></div>
+                            <div class="skill-item"><i class="fas fa-tasks"></i><span data-i18n="skillsSoft3">Proatividade</span></div>
+                            <div class="skill-item"><i class="fas fa-puzzle-piece"></i><span data-i18n="skillsSoft4">Resolução de Problemas</span></div>
+                            <div class="skill-item"><i class="fas fa-users"></i><span data-i18n="skillsSoft5">Trabalho em Equipe</span></div>
                         </div>
                     </div>
 
                     <div class="timeline">
-                        <h4 class="skills-title">Minha Jornada</h4>
+                        <h4 class="skills-title" data-i18n="journeyTitle">Minha Jornada</h4>
                         <div class="timeline-container">
                             <div class="timeline-item">
-                                <div class="timeline-date">2024 - Presente</div>
-                                <h5 class="timeline-title">Graduando em Ciência da Computação</h5>
-                                <div class="timeline-location">Instituto Federal do Maranhão (IFMA)</div>
-                                <p class="timeline-description">Foco em algoritmos, estruturas de dados, programação e ciência de dados.</p>
+                                <div class="timeline-date" data-i18n="journey1Date">2024 - Presente</div>
+                                <h5 class="timeline-title" data-i18n="journey1Title">Graduando em Ciência da Computação</h5>
+                                <div class="timeline-location" data-i18n="journey1Location">Instituto Federal do Maranhão (IFMA)</div>
+                                <p class="timeline-description" data-i18n="journey1Desc">Foco em algoritmos, estruturas de dados, programação e ciência de dados.</p>
                             </div>
                             <div class="timeline-item">
-                                <div class="timeline-date">2024 - 2025</div>
-                                <h5 class="timeline-title">Membro do Clube de Robótica</h5>
-                                <div class="timeline-location">Laboratório de Inovação do IFMA</div>
-                                <p class="timeline-description">Participação em projetos de pesquisa aplicando machine learning e visualização de dados.</p>
+                                <div class="timeline-date" data-i18n="journey2Date">2024 - 2025</div>
+                                <h5 class="timeline-title" data-i18n="journey2Title">Membro do Clube de Robótica</h5>
+                                <div class="timeline-location" data-i18n="journey2Location">Laboratório de Inovação do IFMA</div>
+                                <p class="timeline-description" data-i18n="journey2Desc">Participação em projetos de pesquisa aplicando machine learning e visualização de dados.</p>
                             </div>
                             <!--
                             <div class="timeline-item">
@@ -161,79 +173,87 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title reveal">Meus Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <img src="https://storage.googleapis.com/kaggle-datasets-images/7035203/11256950/404d33affab9ff2de5182cf494f686d7/dataset-cover.jpg?t=2025-04-02-22-42-58" alt="Análise de Dados de Vendas">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Análise de Dados de Vendas (EM ANDAMENTO)</h3>
-                        <p class="project-description">Análise exploratória e preditiva de dados de vendas de uma rede de varejo, identificando padrões e tendências para otimizar estratégias.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Pandas</span>
-                            <span class="project-tag">Matplotlib</span>
-                            <span class="project-tag">Seaborn</span>
-                            <span class="project-tag">Scikit-Learn</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.kaggle.com/code/guilhermelima2005/product-retail-price-eda" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Ver mais
-                            </a>
-                            <a href="https://kaggle.com/" target="_blank" class="project-link">
-                                <i class="fab fa-kaggle"></i> Kaggle
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <img src="https://storage.googleapis.com/kaggle-datasets-images/3375918/5872805/e6c438e764799de9a90ae10bd32c51cc/dataset-cover.jpg?t=2023-06-08-06-58-37" alt="Sistema de Recomendação de Filmes">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sistema de Recomendação de Filmes (EM ANDAMENTO)</h3>
-                        <p class="project-description">Desenvolvimento de um sistema de recomendação baseado em filtragem colaborativa e conteúdo para sugerir filmes personalizados aos usuários.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">TensorFlow</span>
-                            <span class="project-tag">Colaborative Filtering</span>
-                            <span class="project-tag">API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Ver mais
-                            </a>
-                            <a href="https://github.com/" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <img src="https://storage.googleapis.com/kaggle-datasets-images/2633044/4504149/9e9842d99500b5ffcc68cb43c81e4970/dataset-cover.jpg?t=2022-11-13-15-51-56" alt="Dashboard Interativo COVID-19">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Dashboard Interativo COVID-19 (EM ANDAMENTO)</h3>
-                        <p class="project-description">Criação de um dashboard interativo para visualização e análise de dados da pandemia de COVID-19, com foco em métricas brasileiras.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Power BI</span>
-                            <span class="project-tag">SQL</span>
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Data Visualization</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Ver mais
-                            </a>
-                            <a href="https://kaggle.com/" target="_blank" class="project-link">
-                                <i class="fab fa-kaggle"></i> Kaggle
-                            </a>
-                        </div>
-                    </div>
+            <h2 class="section-title reveal" data-i18n="projectsTitle">Meus Projetos</h2>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="project-card reveal">
+                                <div class="project-image">
+                                    <img src="https://storage.googleapis.com/kaggle-datasets-images/7035203/11256950/404d33affab9ff2de5182cf494f686d7/dataset-cover.jpg?t=2025-04-02-22-42-58" alt="Análise de Dados de Vendas">
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Análise de Dados de Vendas (EM ANDAMENTO)</h3>
+                                    <p class="project-description">Análise exploratória e preditiva de dados de vendas de uma rede de varejo, identificando padrões e tendências para otimizar estratégias.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">Python</span>
+                                        <span class="project-tag">Pandas</span>
+                                        <span class="project-tag">Matplotlib</span>
+                                        <span class="project-tag">Seaborn</span>
+                                        <span class="project-tag">Scikit-Learn</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://www.kaggle.com/code/guilhermelima2005/product-retail-price-eda" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i> Ver mais
+                                        </a>
+                                        <a href="https://kaggle.com/" target="_blank" class="project-link">
+                                            <i class="fab fa-kaggle"></i> Kaggle
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="project-card reveal">
+                                <div class="project-image">
+                                    <img src="https://storage.googleapis.com/kaggle-datasets-images/3375918/5872805/e6c438e764799de9a90ae10bd32c51cc/dataset-cover.jpg?t=2023-06-08-06-58-37" alt="Sistema de Recomendação de Filmes">
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Sistema de Recomendação de Filmes (EM ANDAMENTO)</h3>
+                                    <p class="project-description">Desenvolvimento de um sistema de recomendação baseado em filtragem colaborativa e conteúdo para sugerir filmes personalizados aos usuários.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">Python</span>
+                                        <span class="project-tag">TensorFlow</span>
+                                        <span class="project-tag">Colaborative Filtering</span>
+                                        <span class="project-tag">API</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i> Ver mais
+                                        </a>
+                                        <a href="https://github.com/" target="_blank" class="project-link">
+                                            <i class="fab fa-github"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="project-card reveal">
+                                <div class="project-image">
+                                    <img src="https://storage.googleapis.com/kaggle-datasets-images/2633044/4504149/9e9842d99500b5ffcc68cb43c81e4970/dataset-cover.jpg?t=2022-11-13-15-51-56" alt="Dashboard Interativo COVID-19">
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Dashboard Interativo COVID-19 (EM ANDAMENTO)</h3>
+                                    <p class="project-description">Criação de um dashboard interativo para visualização e análise de dados da pandemia de COVID-19, com foco em métricas brasileiras.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">Power BI</span>
+                                        <span class="project-tag">SQL</span>
+                                        <span class="project-tag">Python</span>
+                                        <span class="project-tag">Data Visualization</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i> Ver mais
+                                        </a>
+                                        <a href="https://kaggle.com/" target="_blank" class="project-link">
+                                            <i class="fab fa-kaggle"></i> Kaggle
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -242,34 +262,34 @@
     <!-- Resume Section -->
     <section id="resume" class="resume">
         <div class="container">
-            <h2 class="section-title reveal">Meu Currículo</h2>
+            <h2 class="section-title reveal" data-i18n="resumeTitle">Meu Currículo</h2>
             <div class="resume-container reveal">
                 <div class="resume-actions">
                     <a href="docs/CV.pdf" class="btn resume-download">
-                        <i class="fas fa-download"></i> Baixar CV em PDF
+                        <i class="fas fa-download"></i> <span data-i18n="resumeBtn">Baixar CV em PDF</span>
                     </a>
                     <ul class="resume-sections">
-                        <li><a href="" class="resume-section-link active" data-section="education">Educação</a></li>
+                        <li><a href="" class="resume-section-link active" data-section="education" data-i18n="resumeEducation">Educação</a></li>
                        <!-- <li><a href="" class="resume-section-link" data-section="experience">Experiência</a></li> -->
-                        <li><a href="" class="resume-section-link" data-section="certificates">Certificados</a></li>
-                        <li><a href="" class="resume-section-link" data-section="skills">Habilidades</a></li>
+                        <li><a href="" class="resume-section-link" data-section="certificates" data-i18n="resumeCertificates">Certificados</a></li>
+                        <li><a href="" class="resume-section-link" data-section="skills" data-i18n="resumeSkills">Habilidades</a></li>
                     </ul>
                 </div>
                 <div class="resume-content">
                     <div id="education" class="resume-section active">
-                        <h3>Educação</h3>
+                        <h3 data-i18n="resumeEducation">Educação</h3>
                         <div class="timeline-container">
                             <div class="timeline-item">
-                                <div class="timeline-date">2024 - 2028 (Previsão)</div>
-                                <h5 class="timeline-title">Bacharelado em Ciência da Computação</h5>
-                                <div class="timeline-location">Instituto Federal do Maranhão (IFMA)</div>
-                                <p class="timeline-description">Cursando o 3º período com ênfase em ciência de dados, aprendizado de máquina e desenvolvimento de software.</p>
+                                <div class="timeline-date" data-i18n="education1Date">2024 - 2028 (Previsão)</div>
+                                <h5 class="timeline-title" data-i18n="education1Title">Bacharelado em Ciência da Computação</h5>
+                                <div class="timeline-location" data-i18n="education1Location">Instituto Federal do Maranhão (IFMA)</div>
+                                <p class="timeline-description" data-i18n="education1Desc">Cursando o 3º período com ênfase em ciência de dados, aprendizado de máquina e desenvolvimento de software.</p>
                             </div>
                             <div class="timeline-item">
-                                <div class="timeline-date">2020 - 2022</div>
-                                <h5 class="timeline-title">Ensino Médio</h5>
-                                <div class="timeline-location">Colégio Privado</div>
-                                <p class="timeline-description">Formação concluída com destaque em matemática e ciências.</p>
+                                <div class="timeline-date" data-i18n="education2Date">2020 - 2022</div>
+                                <h5 class="timeline-title" data-i18n="education2Title">Ensino Médio</h5>
+                                <div class="timeline-location" data-i18n="education2Location">Colégio Privado</div>
+                                <p class="timeline-description" data-i18n="education2Desc">Formação concluída com destaque em matemática e ciências.</p>
                             </div>
                         </div>
                     </div>
@@ -293,7 +313,7 @@
                     </div>
                     -->
                     <div id="certificates" class="resume-section">
-                        <h3>Certificados</h3>
+                        <h3 data-i18n="certificatesTitle">Certificados</h3>
                         <div class="certificate-card">
                             <div class="certificate-logo">
                                 <img src="https://th.bing.com/th/id/R.8ec1a2a793d40c7826d1a89bc11607c1?rik=A3H8wh71rs9W1Q&pid=ImgRaw&r=0" alt="DataCamp Logo">
@@ -346,9 +366,9 @@
                         </div>
                     </div>
                     <div id="skills" class="resume-section">
-                        <h3>Habilidades</h3>
+                        <h3 data-i18n="resumeSkills">Habilidades</h3>
                         <div class="skills-container">
-                            <h4 class="skills-title">Linguagens de Programação</h4>
+                            <h4 class="skills-title" data-i18n="skillsProgLangTitle">Linguagens de Programação</h4>
                             <div class="skills-list">
                                 <div class="skill-item"><i class="fab fa-python"></i>Python (Intermediário)</div>
                                 <div class="skill-item"><i class="fab fa-r-project"></i>R (Básico)</div>
@@ -359,7 +379,7 @@
                             </div>
                         </div>
                         <div class="skills-container">
-                            <h4 class="skills-title">Ferramentas e Frameworks</h4>
+                            <h4 class="skills-title" data-i18n="skillsToolsTitle">Ferramentas e Frameworks</h4>
                             <div class="skills-list">
                                 <div class="skill-item"><i class="fas fa-table"></i>Pandas</div>
                                 <div class="skill-item"><i class="fas fa-calculator"></i>NumPy</div>
@@ -372,11 +392,11 @@
                             </div>
                         </div>
                         <div class="skills-container">
-                            <h4 class="skills-title">Idiomas</h4>
+                            <h4 class="skills-title" data-i18n="skillsLangsTitle">Idiomas</h4>
                             <div class="skills-list">
-                                <div class="skill-item"><i class="fas fa-language"></i>Português (Nativo)</div>
-                                <div class="skill-item"><i class="fas fa-language"></i>Inglês (Intermediário)</div>
-                                <div class="skill-item"><i class="fas fa-language"></i>Japonês (Básico)</div>
+                                <div class="skill-item"><i class="fas fa-language"></i><span data-i18n="lang1">Português (Nativo)</span></div>
+                                <div class="skill-item"><i class="fas fa-language"></i><span data-i18n="lang2">Inglês (Intermediário)</span></div>
+                                <div class="skill-item"><i class="fas fa-language"></i><span data-i18n="lang3">Japonês (Básico)</span></div>
                             </div>
                         </div>
                     </div>
@@ -393,38 +413,38 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title reveal">Contato</h2>
+            <h2 class="section-title reveal" data-i18n="contactTitle">Contato</h2>
             <div class="contact-container reveal">
                 <div class="contact-info">
-                    <h3>Vamos Conversar</h3>
+                    <h3 data-i18n="contactSubTitle">Vamos Conversar</h3>
                     <div class="contact-text">
-                        <p>Estou sempre aberto a novas oportunidades, projetos e colaborações. Se você tem um projeto interessante, uma oportunidade de estágio ou apenas quer bater um papo sobre dados e IA, entre em contato!</p>
+                        <p data-i18n="contactText">Estou sempre aberto a novas oportunidades, projetos e colaborações. Se você tem um projeto interessante, uma oportunidade de estágio ou apenas quer bater um papo sobre dados e IA, entre em contato!</p>
                     </div>
                     <div class="contact-social">
                         <a href="https://github.com/Guilherme450" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/guilherme-lima-nascimento-34857a302/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/guilherme-lima-34857a302/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="https://www.kaggle.com/guilhermelima2005" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
                         <a href="mailto:guilherme@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                     <div class="contact-quote">
-                        "Vamos conversar sobre dados e ideias que transformam o mundo!"
+                        <span data-i18n="contactQuote">"Vamos conversar sobre dados e ideias que transformam o mundo!"</span>
                     </div>
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name" class="form-label">Nome</label>
+                            <label for="name" class="form-label" data-i18n="formName">Nome</label>
                             <input type="text" id="name" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="email" class="form-label">E-mail</label>
+                            <label for="email" class="form-label" data-i18n="formEmail">E-mail</label>
                             <input type="email" id="email" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="message" class="form-label">Mensagem</label>
+                            <label for="message" class="form-label" data-i18n="formMessage">Mensagem</label>
                             <textarea id="message" class="form-control" required></textarea>
                         </div>
-                        <button type="submit" class="btn form-submit">Enviar Mensagem</button>
+                        <button type="submit" class="btn form-submit" data-i18n="formBtn">Enviar Mensagem</button>
                     </form>
                 </div>
             </div>
@@ -436,23 +456,24 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">Guilherme Lima.</div>
-                <p class="footer-text">Cientista de Dados em formação, transformando dados em insights.</p>
+                <p class="footer-text" data-i18n="footerText">Cientista de Dados em formação, transformando dados em insights.</p>
                 <div class="footer-social">
                     <a href="https://github.com/Guilherme450" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/guilherme-lima-nascimento-34857a302/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/guilherme-lima-34857a302/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="https://www.kaggle.com/guilhermelima2005" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
                     <a href="mailto:guilherme@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="footer-links">
-                    <a href="#home">Início</a>
-                    <a href="#about">Sobre</a>
-                    <a href="#projects">Projetos</a>
-                    <a href="#resume">Currículo</a>
-                    <a href="#contact">Contato</a>
+                    <a href="#home" data-i18n="navHome">Início</a>
+                    <a href="#about" data-i18n="navAbout">Sobre</a>
+                    <a href="#projects" data-i18n="navProjects">Projetos</a>
+                    <a href="#resume" data-i18n="navResume">Currículo</a>
+                    <a href="#contact" data-i18n="navContact">Contato</a>
                 </div>
-                <p class="footer-copy">&copy; 2024 Guilherme Lima. Todos os direitos reservados.</p>
+                <p class="footer-copy" data-i18n="footerRights">&copy; 2024 Guilherme Lima. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 </html>
