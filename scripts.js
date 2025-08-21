@@ -131,8 +131,8 @@ const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        header.style.padding = '10px 0';
-        header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        header.style.padding = '3px 0';
+        header.style.boxShadow = '0 2px 10px rgba(32, 30, 30, 0.65)';
     } else {
         header.style.padding = '';
         header.style.boxShadow = '';
